@@ -6,4 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Admin.create(username: 'admin', password: 'admin')
+Admin.create! :password => ENV['ADMIN_PASSWORD'], :username => ENV['ADMIN_USERNAME']
