@@ -1,21 +1,35 @@
 <h1>Sign In</h1>
+
 <%= form_tag session_index_path do %>
 <p id="notice"><%= notice %></p>
-<p>
+ <%= stylesheet_link_tag    "bootstrap" %>
+
+<div class="field">
+
   <%= label_tag :username %>
   <%= text_field_tag :username %>
-</p>
-<p>
+</div>
+
+<div class="field">
+<style>
+  .field
+
+  {
+    width: 300px;
+
+  }
+</style>
   <%= label_tag :password %>
   <%= password_field_tag :password %>
-</p>
+</div>
 
-<p>
+<div class="field">
+
   <%= label_tag :is_admin %><br />
   <%= check_box_tag :is_admin %>
-</p>
+</div>
 
-<p class="button">
+<div class="btn-group">
   <%= submit_tag "Log In" %>
-</p>
+</div>
 <% end %>

@@ -2,10 +2,10 @@ body {
 	font-size:14px !important;
 	
 }
-html, body { 
+html,body { 
 	background: transparent;
 	height: 100%;
-}
+	}
 
 .bg
 {
@@ -16,15 +16,19 @@ html, body {
 
 .centered
 {
-	background-color: #D8D8D8;
+	background-color: purple;
 }
 
 .footer
 {
-	background: #000000;
+	background: transparent;
 }
 
-div
-{
-	box-shadow: 10px 10px 5px #888888;
+.hover{
+	background-color: red;
+}
+p{
+	vertical-align: center;
+	text-align: left;
+	
 }

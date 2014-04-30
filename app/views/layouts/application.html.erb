@@ -6,7 +6,7 @@
 <!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <head>
- <meta charset="utf-8" />
+ <meta charset="utf-8">
 
  <!-- Uncomment to make IE8 render like IE7 -->
  <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
@@ -15,43 +15,50 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
  <title><%= content_for?(:title) ? yield(:title) : "Azma" %></title>
- <%= stylesheet_link_tag    "application" %>
- <%= javascript_include_tag "vendor/custom.modernizr" %>
+ <%= stylesheet_link_tag    "bootstrap" %>
+
+
+ 
+ 
+
+
+<!--<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="">-->
+<!--<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+
  <%= csrf_meta_tags %>
 </head>
 
-<body style="background-color:#C0C0C0;">
-  <div class="shadow">
+<body style="background-color:#66ff66;">
+  
     <header class="header">
       <div class="row">
         <div class="centered">
-          <img class="bg" src="/assets/azmabody.jpg">
+          <img class="bg" src="/assets/azmabody.jpg" width="1000" height="211" >
+
+    
         </div>
       </div>
 
       <div class="row">
-        <nav class="top-bar">
-          <ul class="title-area">
-            <li class="name">
-              <h1><%= link_to "Azma", welcome_home_path %></a></h1>
-            </li>
-          </ul>
-          <section class="top-bar-section">
-            <ul class="centre">
-              <li class="divider"></li>
-              <li><%= link_to "Home", welcome_home_path %></li>
-              <li class="divider"></li>
-              <li><%= link_to "About Us", welcome_aboutus_path %></li>
-              <li class="divider"></li>
+        <nav class="navbar">
+          <ul class="nav nav-pills">
+
+             <li><%=link_to "Azma", welcome_home_path %></a></li>
+
               <li><%= link_to "Events", events_path %></li>
-              <li class="divider"></li>
               <li><%= link_to "Blogs", blogs_path %></li>
-              <li class="divider"></li>
               <li><%= link_to "Discussion Forums", forums_path %></li>
-              <!---<li class="divider"></li>
-              <li><%= link_to "Galleries" %></li>-->
+              <li><%= link_to "About Us", welcome_aboutus_path %></li>
+
+             <li> <%=link_to "Register", new_user_path %> </li>
+            <li><%=link_to "Sign In", new_session_path %></li>
+              <li><a href= "https://twitter.com/AzmaKenya"><img class="img-circle" src="/assets/download.jpg" width="50" height="40" ></a></li>
+              <li><a href= "https://www.facebook.com/groups/366458316704019/ " >facebook</a></li>
+              <li><a href= "https://www.twitter.com " >google +</a></li>
             </ul>
-          </section>
+    
           <section>
             <% if someone_is_logged_in? %>
             <%= session[:user].username %> |
@@ -59,8 +66,7 @@
 
             <% else %>
             
-            <%= link_to "Register", new_user_path %> |
-            <%= link_to "Sign In", new_session_path %>
+            
             <% end %>
           </section>
         </nav>
@@ -74,11 +80,16 @@
     </div>
   </section>
   <div class="row">
-    <div class="footer">
-      This is the footer area.
+
+    <div class="footer" align="center">
+
+   Copyright &copy; 2014 AZMA 
     </div>
   </div>
 </div>
-<%= javascript_include_tag "application" %>
+
+ <%= javascript_include_tag "bootstrap" %>
+ 
+
 </body>
 </html>
