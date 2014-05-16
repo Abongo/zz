@@ -11,6 +11,9 @@ body {
 }
 p.azm{
     color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-wrap:normal;
 }
 
 strong.azma{
