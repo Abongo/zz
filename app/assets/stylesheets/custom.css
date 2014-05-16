@@ -1,7 +1,28 @@
 body { 
-	font-size:14px !important;
+	font-size:30px !important;
+  font-family: 'Tangerine', serif;
+  text-shadow: 4px 4px 4px #aaa;
+    margin-left:inherit;
+    padding-left: 40px;
+    padding-right: 20px;
+    
+
 	
 }
+p.azm{
+    color: black;
+}
+
+strong.azma{
+    padding-top: 30px;
+        color:purple;
+    
+}
+p.azma{
+    font-family: sans-serif,fantasy;
+    font-size: 14px;
+}
+
 html,body { 
 	background: transparent;
 	height: 100%;
@@ -14,10 +35,7 @@ html,body {
 	background-size: 100% 100%;
 }
 
-.centered
-{
-	background-color: purple;
-}
+
 
 .footer
 {
@@ -26,9 +44,10 @@ html,body {
 
 .hover{
 	background-color: red;
+    
 }
 p{
 	vertical-align: center;
 	text-align: left;
-	
+	color: inherit;
 }

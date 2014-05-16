@@ -59,7 +59,7 @@ a:focus {
 
 a:active,
 a:hover {
-  background-color: red;
+  background-color: transparent;
   outline: 0;
 }
 

@@ -15,8 +15,17 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
  <title><%= content_for?(:title) ? yield(:title) : "Azma" %></title>
- <%= stylesheet_link_tag    "bootstrap" %>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 
+    <%= stylesheet_link_tag    "uikit.almost-flat" %>
+<%= stylesheet_link_tag    "uikit.almost-flat" %>
+<%= stylesheet_link_tag    "uikit.almost-flat.min" %>
+<%= stylesheet_link_tag    "uikit" %>
+<%= stylesheet_link_tag    "uikit.gradient" %>
+<%= stylesheet_link_tag    "uikit.gradient.min" %>
+<%= stylesheet_link_tag    "uikit.min" %> 
+    <%= stylesheet_link_tag    "bootstrap" %>
+    <%= stylesheet_link_tag    "custom" %>
 
  
  
@@ -30,7 +39,7 @@
  <%= csrf_meta_tags %>
 </head>
 
-<body style="background-color:#66ff66;">
+<body style="background-color:orange + blue;">
   
     <header class="header">
       <div class="row">
@@ -54,7 +63,7 @@
 
              <li> <%=link_to "Register", new_user_path %> </li>
             <li><%=link_to "Sign In", new_session_path %></li>
-              <li><a href= "https://twitter.com/AzmaKenya"><img class="img-circle" src="/assets/download.jpg" width="50" height="40" ></a></li>
+              <li><a href= "https://twitter.com/AzmaKenya"><img class="img" src="/assets/download.png" width="50" height="40" ></a></li>
               <li><a href= "https://www.facebook.com/groups/366458316704019/ " >Facebook</a></li>
               <li><a href= "https://www.twitter.com " >Google +</a></li>
             </ul>
@@ -89,6 +98,7 @@
 </div>
 
  <%= javascript_include_tag "bootstrap" %>
+
  
 
 </body>
